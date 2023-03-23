@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class sprint {
+public class Sprint {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
