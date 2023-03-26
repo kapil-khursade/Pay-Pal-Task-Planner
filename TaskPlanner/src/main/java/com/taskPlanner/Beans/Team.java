@@ -2,6 +2,8 @@ package com.taskPlanner.Beans;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -25,5 +27,6 @@ public class Team {
 	private Member teamLead;
 	@OneToMany
 	private List<Member> teamMember;
-	
+	@OneToOne
+	private Project teamOfProject;
 }
